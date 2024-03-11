@@ -10,5 +10,7 @@ public interface ServiceCommentsInteface {
     public DTOcomment getCommentById(int id);
 
     public DTOcomment[] getAllComments();
+
+    public DTOcomment[] getCommentFromPostId(int postId);
     
 }

@@ -19,5 +19,10 @@ public class ServiceComments implements ServiceCommentsInteface{
         var response = restTemplate.getForObject(url + "/comments/", DTOcomment[].class);
         return response;
     }
+
+    public DTOcomment[] getCommentFromPostId(int postId){
+        var response = restTemplate.getForObject(url + "/posts/" + postId + "/comments", DTOcomment[].class);
+        return response;
+    }
     
 }

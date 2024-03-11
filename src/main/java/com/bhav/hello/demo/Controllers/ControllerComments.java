@@ -26,4 +26,9 @@ public class ControllerComments {
         return sc.getAllComments();
     }
 
+    @GetMapping("/posts/{postId}/comments")
+    public DTOcomment[] getCommentFromPostId(@PathVariable int postId){
+        return sc.getCommentFromPostId(postId);
+    }
+
 }
