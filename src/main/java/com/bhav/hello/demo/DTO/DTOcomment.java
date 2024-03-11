@@ -9,8 +9,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DTOcomment {
-    private int userId;
-    private int id;
-    private String title;
+    private int postId;
+    private int id ;
+    private String name;
+    private String email;
     private String body;
 }
